@@ -96,6 +96,15 @@ footer {
   background-color: #fff;
 }
 
+footer input {
+  width: 85%;
+  font-size: 15px;
+}
+
+footer button {
+  background-color: #fff;
+}
+
 footer button img {
   width: 26px;
   height: 26px;
