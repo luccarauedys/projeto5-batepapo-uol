@@ -1,7 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
-   box-sizing: border-box;
-   font-family: "Roboto", sans-serif;
- }
- 
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/* ----- Header ----- */
+
+.fixed {
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  top: 0;
+}
+header .logo {
+  width: 75px;
+  height: 53px;
+}
+header button {
+  background-color: transparent;
+}
+header .contacts {
+  width: 45px;
+  height: 45px;
+}
+
+/* ----- Main ----- */
+
+main {
+  margin: 100px 0px;
+}
+
+/* ----- Chat & messages ----- */
+
+.message {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.message.status {
+  background-color: #dcdcdc;
+}
+.message.private {
+  background-color: #ffdede;
+}
+.message.normal {
+  background-color: #ffffff;
+}
+
+.time {
+  color: #aaaaaa;
+}
+.from,
+.text {
+  color: #000000;
+}
+strong {
+  font-weight: bold;
+}
+
+/* ----- Footer ----- */
+
+footer {
+  bottom: 0;
+}
+footer input {
+  width: 85%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+footer button {
+  background-color: transparent;
+}
+footer button img {
+  width: 26px;
+  height: 26px;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+input:focus::placeholder {
+  color: transparent;
+}
