@@ -20,22 +20,10 @@
 
    <main>
       <section id="chat">
-         <!-- <div class="message normal" data-identifier="message">
+         <!-- <div class="msg private_message" data-identifier="message">
             <span>(${time})</span>
             <span> <strong>${from}</strong> para <strong>${to}:</strong> </span>
             <span>${text}</span>
-         </div> -->
-
-         <!-- <div class="message private" data-identifier="message">
-            <span>(${time})</span>
-            <span> <strong>${from}</strong> para <strong>${to}:</strong> </span>
-            <span>${text}</span>
-         </div> -->
-
-         <!-- <div class="message status" data-identifier="message">
-            <span>(${time})</span>
-            <span> <strong>${from}</strong> </span>
-            <span>sai da sala...</span>
          </div> -->
       </section>
    </main>
@@ -44,6 +32,9 @@
       <input type="text" placeholder="Escreva aqui...">
       <button data-identifier="send-message"><img src="./images/send.png" alt="Botão de enviar mensagem"></button>
    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./scripts/script.js"></script>
 </body>
 
 </html>

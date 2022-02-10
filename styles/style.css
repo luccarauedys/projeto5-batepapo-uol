@@ -50,21 +50,31 @@ main {
 
 /* ----- Chat & messages ----- */
 
-.message {
+#chat {
+  width: 100%;
+  overflow: auto;
+}
+
+.msg {
   font-size: 14px;
   line-height: 1.5;
   padding: 10px;
   margin-bottom: 5px;
+  width: 100%;
 }
 
-.message.status {
+.msg.status {
   background-color: #dcdcdc;
 }
-.message.private {
+.msg.private_message {
   background-color: #ffdede;
 }
-.message.normal {
+.msg.message {
   background-color: #ffffff;
+}
+
+span {
+  width: 100%;
 }
 
 .time {
