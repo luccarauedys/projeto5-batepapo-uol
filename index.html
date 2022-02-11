@@ -29,8 +29,10 @@
    </main>
 
    <footer class="fixed">
-      <input type="text" placeholder="Escreva aqui...">
-      <button data-identifier="send-message"><img src="./images/send.png" alt="Botão de enviar mensagem"></button>
+      <input onkeyup="enviarComEnter(event)" id="writeHere" type="text" placeholder="Escreva aqui...">
+      <button onclick="enviarMensagem()" data-identifier="send-message">
+         <img src="./images/send.png" alt="Botão de enviar mensagem">
+      </button>
    </footer>
 
    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
